@@ -13,17 +13,6 @@ This repository contains a comprehensive analysis of PhonePe transaction and dem
 - `PhonePe.xlsx` – State-level and district-level transaction and user data.
 - `districts.csv` – Unique mapping of district codes and names for consistency checks.
 
-## Folder Structure
-PhonePe_Case_Study/
-├── notebook/
-│   └── PhonePe.ipynb            # Jupyter/Colab notebook with full analysis
-├── data/
-│   ├── PhonePe.xlsx             # Raw Excel data from PhonePe
-│   └── districts.csv            # District code-name mapping
-├── images/                      # Optional: store charts, graphs, visualizations
-│   └── example_chart.png
-└── README.md                    # This README file
-
 ## Key Analysis Performed
 - **Data Cleaning & Validation:** Missing value handling, data type checks, and consistency checks between state and district levels.
 - **Exploratory Data Analysis (EDA):**  
