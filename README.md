@@ -1,90 +1,99 @@
-#  PhonePe Case Study Analysis
+# PhonePe Digital Transactions Analysis
 
-##  Overview
-This project presents a comprehensive, **AI-assisted analysis** of PhonePe’s transaction, user, device, and demographic data from **2018 to 2021**.  
-The objective is to uncover usage trends, digital adoption patterns, and regional behavior, and to translate insights into **actionable business recommendations** using **Python (Google Colab), Gemini AI, and Power BI**.
+## Overview  
+This project presents a comprehensive analysis of PhonePe’s transaction, user, device, and demographic data (2018–2021). The objective is to identify digital adoption trends, regional transaction behavior, and usage patterns using Python (Google Colab) and Power BI.
 
 ---
 
-##  Objectives
+## Objectives  
+
 - Analyze state- and district-level transaction and user data  
 - Identify trends in transaction volumes, transaction types, and average values  
-- Explore correlations with demographics, population, and device usage  
-- Provide actionable insights for strategic decision-making  
+- Explore correlations with population, demographics, and device usage  
+- Derive insights and propose data-driven recommendations  
 
 ---
 
-##  Data Sources
+## Data Sources  
+
 - **PhonePe.xlsx** – State-level and district-level transaction and user data  
-- **districts.csv** – Unique mapping of district codes and district names for consistency checks  
+- **districts.csv** – Unique district code mapping for validation and aggregation checks  
 
 ---
 
-##  Key Analysis Performed
+## Key Analysis Performed  
 
-###  Data Cleaning & Validation
+### Data Cleaning & Validation  
 - Handled missing values and incorrect records  
-- Performed data type validation  
-- Conducted consistency checks between state-level and district-level aggregates  
+- Validated data types and schema consistency  
+- Performed consistency checks between state-level and district-level aggregates  
 
-###  Exploratory Data Analysis (EDA)
-- Transaction trends over time (2018–2021)  
+### Exploratory Data Analysis (EDA)  
+- Transaction growth trends (2018–2021)  
 - Top and bottom states by transaction volume  
 - Popular transaction types and device brands  
-- Population distribution by district  
+- District-level population distribution  
 
-###  Advanced & AI-Assisted Analysis
+### Advanced Analysis  
 - User-to-population ratio by state  
 - Average transaction value per user  
-- Correlation between population density and transaction volume  
-- Device brand usage distribution  
-- **Gemini AI** used for hypothesis validation and summarizing complex patterns  
+- Correlation (~0.31) between population density and transaction volume  
+- Device brand usage distribution across states  
+
+Gemini AI was used to validate hypotheses and assist in summarizing complex analytical patterns.
 
 ---
 
-##  Key Findings
-- **Overall Growth:** Significant increase in transaction volumes and amounts from 2018–2021  
-- **Top States:** Karnataka, Maharashtra, and Telangana lead in transaction volume  
-- **Popular Transaction Types:** Merchant Payments and P2P transfers dominate usage  
-- **Device Usage:** Xiaomi is the most popular device brand in **35 out of 36 states**  
-- **High-Value Markets:** Telangana, Karnataka, and Andhra Pradesh show the highest average transaction per user  
-- **Low Adoption Areas:** Northeastern states have lower user-to-population ratios and transaction volumes  
+## Key Findings  
+
+- Significant increase in transaction volumes and value between 2018–2021  
+- Karnataka, Maharashtra, and Telangana lead in transaction volume  
+- Merchant Payments and P2P transfers dominate transaction types  
+- Xiaomi is the leading device brand in 35 of 36 states  
+- Telangana, Karnataka, and Andhra Pradesh show the highest average transaction value per user  
+- Northeastern states show lower user-to-population ratios and transaction volumes  
 
 ---
 
-##  Recommendations
-- **Target High-Growth Markets:** Focus on states with high transaction volumes and high average transaction per user  
-- **Expand in Low-Penetration Areas:** Implement localized strategies to increase adoption in Northeastern states  
-- **Promote Financial Services:** Leverage high-ATV users for cross-selling financial products  
-- **Optimize App Performance:** Ensure compatibility across popular devices (Xiaomi, Samsung, Vivo, OnePlus)  
-- **Monitor Transaction Types:** Continuously track trends to refine product and marketing strategies  
-- **Leverage District-Level Data:** Apply hyper-local strategies using demographic and transaction insights  
+## Recommendations  
+
+- Focus growth strategies on high-volume, high-ATV states  
+- Develop localized initiatives to improve adoption in low-penetration regions  
+- Explore cross-selling financial products in high-ATV segments  
+- Optimize app performance for dominant device ecosystems  
+- Leverage district-level insights for hyper-local targeting  
 
 ---
 
-##  Power BI Dashboard
-An interactive **3-page Power BI dashboard** was built to present insights clearly:
-- **Executive Overview:** KPIs, trends, Top 10 states  
-- **State Performance Analysis:** State-wise transactions, amount, and users  
-- **Device & Transaction Insights:** Transaction types, device usage, ATV metrics  
+## Power BI Dashboard  
 
-**Technical highlights:**
+An interactive 3-page dashboard was developed to present insights:
+
+1. Executive Overview – KPIs and Top States  
+2. State Performance Analysis – Transactions, value, users  
+3. Device & Transaction Insights – Device share, transaction types, ATV  
+
+### Technical Highlights  
+
 - Star schema modeling (Dim_State, Dim_District, Dim_Date)  
-- DAX measures for KPIs  
-- Synced slicers and Top-N filtering  
+- DAX measures for KPI calculations  
+- Synced slicers and dynamic Top-N filtering  
 
 ---
 
-##  Tools & Technologies
-- **Python (Google Colab):** pandas, numpy, matplotlib, seaborn  
-- **Gemini AI:** AI-assisted insight validation and pattern analysis  
-- **Power BI:** Data modeling, DAX measures, interactive dashboards  
-- **Excel / CSV / XLSX:** Source and processed datasets  
+## Tools & Technologies  
+
+- Python (Google Colab): pandas, numpy, matplotlib  
+- Power BI: Data modeling, DAX measures, interactive dashboards  
+- Gemini AI: Hypothesis validation and analytical summarization  
+- Excel / CSV / XLSX: Source datasets  
 
 ---
 
-##  How to Explore
+## How to Explore  
 
 Clone the repository:
+
 ```bash
 git clone https://github.com/pavan-kumar-mekala/PhonePe-Case-Study.git
+```
